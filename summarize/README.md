@@ -39,12 +39,12 @@ This project was tested with [llama.cpp server](https://github.com/ggml-org/llam
 
 ### 4. Clone This Repository
 ```bash
-git clone https://github.com/okuvshynov/experiments.git
+git clone https://github.com/okuvshynov/okmcp.git
 ```
 
 ### 5. Configure Claude Code to Use the MCP Server
 ```bash
-claude mcp add summarize -s user -- uv "--directory" /Absolute/path/to/experiments/mcps/summarize run summarize.py
+claude mcp add summarize -s user -- uv "--directory" /Absolute/path/to/okmcp/summarize run summarize.py
 ```
 Note: The `-s` flag adds this globally rather than per project
 
@@ -54,7 +54,7 @@ Example with [cubestat](https://github.com/okuvshynov/cubestat):
 
 ```bash
 git clone https://github.com/okuvshynov/cubestat.git
-mkdir -p cubestat/.claude/commands && cp experiments/mcps/commands/initref.md cubestat/.claude/commands
+mkdir -p cubestat/.claude/commands && cp okmcp/summarize/commands/initref.md cubestat/.claude/commands
 ```
 
 ## Usage
